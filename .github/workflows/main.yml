@@ -1,13 +1,13 @@
 name: Schedule jobs
 
-on: 
- schedule:
-   - cron: "*/5 * * * *"
+on:
+  schedule:
+    - cron: "*/5 * * * *" # every 5 minutes (UTC)
 
 jobs:
   run-script:
-   runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-   steps:
-     - name: Print Message
-       run: echo "Hello! Schedule Workflow Executed"
+    steps:
+      - name: Print Message
+        run: echo "Hello! Schedule Workflow Executed"
